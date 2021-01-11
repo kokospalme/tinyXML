@@ -97,7 +97,7 @@ void TinyXML::processChar(uint8_t ch)
       Serial.println(currentState+1,DEC);
 #endif
       currentState++;
-	  if(currentState > stateTable_max) Serial.println("Table index overflow");
+	  if(currentState > stateTable_max) action(ch, error); //table index bounds exceeded
     }
   } // as every table entry must end in anychar we must get out of here
 
