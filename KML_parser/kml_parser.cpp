@@ -28,7 +28,7 @@ void XML_callback( uint8_t statusflags, char* tagName,  uint16_t tagNameLen,  ch
     Serial.print(" text:");
     Serial.println(data);
 */
-  printf("Attribute: %s text %s\n",tagName, data);
+  printf("Attribute: %s = %s\n",tagName, data);
   }
   else if  (statusflags & STATUS_ERROR)
   {
