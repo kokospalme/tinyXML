@@ -12,3 +12,5 @@ Downloaded from
 
 bug fixes 1/11/2021 sjr (array bound checks added)
 PROGMEM used for state table
+
+Added Code::Blocks project KML_parser, parses KML files, with example
