@@ -1,5 +1,5 @@
 # tinyXML
-Arduino XML parser, bug fixes
+Arduino XML and KML parser, bug fixes
 TinyXML Library for Arduino
 ----
 
