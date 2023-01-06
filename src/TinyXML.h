@@ -2,7 +2,6 @@
 #define TinyXML_h
 
 #include <inttypes.h>
-#include <avr/pgmspace.h>
 
 typedef void (*XMLcallback) (uint8_t errorflag, char* nameBuffer,  uint16_t namebuflen, char* dataBuffer,  uint16_t databuflen);
 
