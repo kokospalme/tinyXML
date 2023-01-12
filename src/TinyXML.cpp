@@ -46,6 +46,15 @@ void TinyXML::reset()
   currentState = Init;
 }
 
+void TinyXML::softreset(){
+  dataBufferPtr =0;
+  // tagBufferPtr = 0;
+  // LTCount = 0;
+  // tagCount = 0;
+  // currentState = Init;
+}
+
+
 void TinyXML::processChar(uint8_t ch)
 {
   uint16_t chToParse;  //note comparisons below, uint8_t to uint16_t

@@ -39,12 +39,14 @@ private:
   uint16_t dataBufferPtr;
   uint8_t checkTagBuffer[CHECKTAGMAX+1];		// allow for terminating zero
   uint8_t checkTagBufferPtr;
+  String lastParent = "";
 
   void action(uint8_t ch, uint8_t actionType);
 public:
   TinyXML();  // constructor
   void init (uint8_t* buffer, uint16_t maxbuflen, XMLcallback XMLcb);
   void reset();
+  void softreset();
   void processChar(uint8_t ch);
 };
 
